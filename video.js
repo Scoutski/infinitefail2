@@ -13,7 +13,6 @@ function handleVideos () {
   } else {
     counter++;
   }
-  video.load();
 }
 
 function shuffle(a) {
