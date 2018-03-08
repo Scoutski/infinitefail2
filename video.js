@@ -24,7 +24,10 @@ function shuffle(a) {
   return a;
 }
 
-window.onload = handleVideos;
-document
-  .getElementById('videoPlayer')
-  .addEventListener('ended', handleVideos, false);
+if (window.innerWidth >= 640) {
+  window.onload = handleVideos;
+
+  document
+    .getElementById('videoPlayer')
+    .addEventListener('ended', handleVideos, false);
+}

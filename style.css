@@ -48,3 +48,23 @@ h1 {
 .icon:hover {
   color: #5c2b7c;
 }
+
+.mobile-container {
+  display: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .desktop-container {
+    display: none;
+  }
+
+  .mobile-container {
+    display: unset;
+    text-align: center;
+  }
+
+  .mobile-text {
+    margin-top: 150px;
+    padding: 20px;
+  }
+}
