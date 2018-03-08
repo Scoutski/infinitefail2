@@ -1,5 +1,5 @@
 const videos = window.videoList;
-const totalVideos = videos.length;
+const totalVideos = videos.length - 1;
 const shuffledVideos = shuffle(videos);
 
 let counter = 0;
@@ -8,7 +8,7 @@ function handleVideos () {
   const videoPlayer = document.getElementById('videoPlayer');
   videoPlayer.src = shuffledVideos[counter];
 
-  if (counter === videos.length - 1) {
+  if (counter === totalVideos) {
     counter = 0;
   } else {
     counter++;
