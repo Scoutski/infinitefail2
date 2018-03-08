@@ -32,3 +32,19 @@ h1 {
   margin-top: 20px;
   text-align: center;
 }
+
+.icon {
+  cursor: pointer;
+  color: #292c30;
+  font-size: 40px;
+  margin-top: 20px;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -ms-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.icon:hover {
+  color: #5c2b7c;
+}
